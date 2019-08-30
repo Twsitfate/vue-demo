@@ -1,6 +1,6 @@
 # vue-demo
 
-## vue项目基础框架 使用 vue-cli+router+axois+vuex
+## vue项目基础框架 使用 vue-cli+router+axios+vuex
 
 ## Project setup
 ```
