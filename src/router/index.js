@@ -4,9 +4,10 @@ import Router from 'vue-router'
 // this generates a separate chunk (about.[hash].js) for this route
 // which is lazy-loaded when the route is visited.
 const Home = () => import('@/views/Home.vue')
-const About = () => import('@/views/About.vue')
 
 Vue.use(Router)
+
+import about_router from '@/router/about.js'
 
 let routers = [
   {
@@ -14,14 +15,10 @@ let routers = [
     name: 'home',
     component: Home
   },
-  {
-    path: '/about',
-    name: 'about',
-    component: About
-  }
+
 ]
 
-routers = routers.concat('')
+routers = routers.concat(about_router)
 export default new Router({
   routes: routers
 })
